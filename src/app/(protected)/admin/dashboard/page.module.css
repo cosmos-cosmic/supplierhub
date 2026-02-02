@@ -11,13 +11,16 @@
 }
 
 .title {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #020617;
+    color: var(--foreground);
+    letter-spacing: -0.02em;
 }
 
 .subtitle {
-    color: #64748b;
+    font-size: 0.875rem;
+    color: var(--foreground-muted);
+    margin-top: 0.25rem;
 }
 
 .serverStatus {
@@ -25,12 +28,12 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 0.75rem;
-    font-weight: 600;
-    color: #64748b;
-    background: white;
-    padding: 0.5rem 0.75rem;
+    font-weight: 500;
+    color: var(--foreground-muted);
+    background: var(--surface);
+    padding: 0.5rem 1rem;
     border-radius: 999px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--border);
 }
 
 .statusDot {
@@ -48,42 +51,34 @@
 }
 
 .statCard {
-    background: white;
+    background: var(--background);
     padding: 1.5rem;
     border-radius: var(--radius);
-    border: 1px solid #e2e8f0;
-    display: flex;
-    gap: 1.25rem;
-    align-items: center;
+    border: 1px solid var(--border);
 }
 
 .statIcon {
-    width: 48px;
-    height: 48px;
-    background: #f8fafc;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .statLabel {
-    font-size: 0.875rem;
-    color: #64748b;
+    font-size: 0.8125rem;
+    color: var(--foreground-muted);
     font-weight: 500;
 }
 
 .statValue {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin: 0.25rem 0;
+    margin: 0.125rem 0;
+    color: var(--foreground);
 }
 
 .statTrend {
     font-size: 0.75rem;
-    color: #8b5cf6;
-    font-weight: 600;
+    color: var(--foreground-muted);
+    opacity: 0.7;
 }
 
 .contentGrid {
@@ -93,26 +88,30 @@
 }
 
 .card {
-    background: white;
-    padding: 1.5rem;
+    background: var(--background);
+    padding: 2rem;
     border-radius: var(--radius);
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--border);
 }
 
-.cardHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
+.cardHeader h3 {
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .viewLink {
     background: none;
     border: none;
-    color: #8b5cf6;
-    font-weight: 600;
-    font-size: 0.875rem;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 0.8125rem;
     cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.viewLink:hover {
+    opacity: 1;
 }
 
 .activityList {
@@ -144,31 +143,38 @@
 }
 
 .verificationCard {
-    background: #020617;
-    color: white;
+    background: var(--primary);
+    color: var(--primary-foreground);
     border: none;
 }
 
 .verificationCard h3 {
-    color: white;
-    margin-bottom: 1rem;
+    color: var(--primary-foreground);
+    margin-bottom: 0.75rem;
 }
 
 .verificationCard p {
-    color: #94a3b8;
+    color: var(--primary-foreground);
+    opacity: 0.8;
     font-size: 0.875rem;
     margin-bottom: 1.5rem;
 }
 
 .actionBtn {
     width: 100%;
-    background: #8b5cf6;
-    color: white;
+    background: var(--background);
+    color: var(--foreground);
     border: none;
     padding: 0.75rem;
     border-radius: var(--radius);
     font-weight: 600;
+    font-size: 0.875rem;
     cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.actionBtn:active {
+    transform: scale(0.98);
 }
 
 .configItem {
