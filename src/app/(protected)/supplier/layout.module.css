@@ -1,0 +1,24 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--surface-alt);
+}
+
+.content {
+    flex: 1;
+    margin-left: 260px;
+    /* Width of sidebar */
+    padding: 2rem;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+}

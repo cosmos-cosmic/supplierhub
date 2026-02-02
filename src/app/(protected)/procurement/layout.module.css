@@ -1,0 +1,23 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f1f5f9;
+}
+
+.content {
+    flex: 1;
+    margin-left: 260px;
+    padding: 2rem;
+}
+
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+}

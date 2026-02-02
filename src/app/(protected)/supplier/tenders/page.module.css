@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    color: var(--foreground-muted);
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    background: var(--background);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.searchWrapper {
+    flex: 1;
+}
+
+.selectGroup {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.select {
+    height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--background);
+    color: var(--foreground);
+    font-size: 0.875rem;
+    outline: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+}
+
+.cardMain {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: var(--surface-alt);
+    color: var(--foreground-muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+}
+
+.tenderTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--foreground);
+}
+
+.tenderMeta {
+    font-size: 0.875rem;
+    color: var(--foreground-muted);
+}
+
+.cardFooter {
+    padding: 1.25rem 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--surface);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.deadlineInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.75rem;
+    color: var(--foreground-muted);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.value {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ef4444;
+}
+
+@media (max-width: 640px) {
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .selectGroup {
+        flex-direction: column;
+    }
+}

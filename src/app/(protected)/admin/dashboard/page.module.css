@@ -1,0 +1,207 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #020617;
+}
+
+.subtitle {
+    color: #64748b;
+}
+
+.serverStatus {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    background: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid #e2e8f0;
+}
+
+.statusDot {
+    width: 8px;
+    height: 8px;
+    background-color: #10b981;
+    border-radius: 50%;
+    display: block;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.statCard {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.statIcon {
+    width: 48px;
+    height: 48px;
+    background: #f8fafc;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.statLabel {
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.statValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.25rem 0;
+}
+
+.statTrend {
+    font-size: 0.75rem;
+    color: #8b5cf6;
+    font-weight: 600;
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid #e2e8f0;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.viewLink {
+    background: none;
+    border: none;
+    color: #8b5cf6;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.activityList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.activityItem {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.activityIcon {
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+}
+
+.activityInfo p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.activityTime {
+    color: #94a3b8;
+    font-size: 0.75rem !important;
+    margin-top: 0.25rem;
+}
+
+.verificationCard {
+    background: #020617;
+    color: white;
+    border: none;
+}
+
+.verificationCard h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.verificationCard p {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.actionBtn {
+    width: 100%;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.configItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.configItem:last-child {
+    border-bottom: none;
+}
+
+.configItem span {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.toggle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.toggleOn {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #10b981;
+}
+
+@media (max-width: 1024px) {
+    .contentGrid {
+        grid-template-columns: 1fr;
+    }
+}
